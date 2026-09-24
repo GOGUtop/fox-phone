@@ -1,1 +1,1 @@
-(()=>{const s=document.createElement('script');s.src='/scripts/extensions/fox-three-plugin/tavern-helper-original.js';s.onload=()=>console.log('[狐映·平行世界·狐刻] loaded');s.onerror=e=>console.error('[狐三模块] load failed',e);document.head.appendChild(s);})();
+(()=>{const cur=document.currentScript;const base=cur&&cur.src?cur.src.replace(/index\.js(?:\?.*)?$/,''):'';const s=document.createElement('script');s.src=base+'tavern-helper-original.js';s.onload=()=>console.log('[狐映·平行世界·狐刻] loaded');s.onerror=e=>console.error('[狐三模块] load failed',e);document.head.appendChild(s);})();

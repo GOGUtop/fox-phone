@@ -1,1 +1,8 @@
-{"display_name":"狐映 · 平行世界 · 狐刻（原样提取版）","version":"1.0.0","js":"index.js","author":"Extracted from V19.5 preset","description":"从 V19.5 预设原样提取的三个模块资源。"}
+{
+  "display_name": "狐映 · 平行世界 · 狐刻",
+  "author": "V19.5 preset extraction",
+  "version": "1.0.1",
+  "loading_order": 10,
+  "js": "index.js",
+  "homePage": "https://github.com/"
+}
