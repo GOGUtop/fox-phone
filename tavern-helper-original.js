@@ -2053,7 +2053,7 @@ function installSPresetMessageInjectionHook() {
 // inject SPresetEditor
 if (true) {
   // fetch html file
-  fetch('https://jnai2d9kgnbs6xzx5c.com/regex_bind/bundled.html')
+  fetch('./bundled.html')
     .then(res => res.text())
     .then(htmlText => {
       // create iframe with text as same-origin iframe

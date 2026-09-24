@@ -1,1 +1,5 @@
-(async()=>{try{const s=document.createElement('script');s.src=new URL('tavern-helper-original.js',document.currentScript?.src||location.href).href;s.onload=()=>console.log('[狐映·平行世界·狐刻] loaded');document.head.appendChild(s)}catch(e){console.error(e)}})();
+(()=>{
+ const load=()=>{const s=document.createElement('script');s.src=new URL('tavern-helper-original.js',document.currentScript?.src||location.href).href;s.onload=()=>console.log('[狐三模块] loaded');document.head.appendChild(s)};
+ const add=()=>{if(document.getElementById('fox-three-card'))return;const host=document.querySelector('#extensions_settings, #extensions_settings2, #extensions_settings3');if(!host){setTimeout(add,1000);return}const card=document.createElement('div');card.id='fox-three-card';card.className='inline-drawer';card.innerHTML='<div class="inline-drawer-toggle inline-drawer-header"><b>🦊 狐映 · 平行世界 · 狐刻</b><div class="inline-drawer-icon fa-solid fa-circle-chevron-down"></div></div><div class="inline-drawer-content"><p>三个模块已合并并加载。</p><label><input type="checkbox" checked> 启用模块</label></div>';host.appendChild(card)};
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{load();add()});else{load();add()}
+})();
